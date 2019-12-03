@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import { Grommet, Box, Button, Grid, Text } from "grommet";
+import { Grommet, Box, Grid } from "grommet";
 import styled, { createGlobalStyle } from "styled-components";
 import { Normalize } from "styled-normalize";
 import theme from "../styles/theme";
@@ -60,15 +60,6 @@ const Layout = ({ children }) => {
             { name: "footer", start: [0, 2], end: [1, 2] }
           ]}
         >
-          {/* <Box
-            gridArea="header"
-            direction="row"
-            align="center"
-            justify="center"
-            pad={{ horizontal: "large", vertical: "small" }}
-          >
-            <Text size="large">{data.site.siteMetadata.title}</Text>
-          </Box> */}
           <Box gridArea="main" justify="center" align="center">
             {children}
           </Box>
