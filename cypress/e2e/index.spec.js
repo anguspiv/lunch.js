@@ -8,4 +8,8 @@ describe('Home Page Test', () => {
   it('Has no detectable a11y violations on load', () => {
     cy.checkA11y();
   });
+
+  it('should have a title', () => {
+    cy.get('h1').contains('Hi people');
+  });
 });

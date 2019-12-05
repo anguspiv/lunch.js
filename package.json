@@ -67,7 +67,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "npm run test:e2e:ci",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint --ext js,jsx ./src",
     "lint:css": "stylelint './src/**/*.{js,jsx}'",
